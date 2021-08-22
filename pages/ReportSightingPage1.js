@@ -7,10 +7,6 @@ import {useFormik} from 'formik';
 var animal = "None";
 
 export default function ReportSightingPage1({navigation}) {
-  const formik = useFormik({
-    initialValues: {animal: ''},
-    onSubmit: values => {}
-  });
   return (
     <View style={styles.containerDark}>
       <Text style={styles.titleLight}>Report a Sighting</Text>

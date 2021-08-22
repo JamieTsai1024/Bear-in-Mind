@@ -10,7 +10,7 @@ export default function ReportSightingPage4({navigation}) {
       <Text style={[styles.subtitleLight, styles.center]}>Your sighting was succesfully reported.{'\n\n'}Thanks for helping out!</Text>
 
       <TouchableHighlight style={[styles.buttonMint, styles.extraMarginBottom]} onPress={() => navigation.navigate('Main Menu')}>
-          <Text style={styles.textDark}>Continue {'>'}</Text>
+        <Text style={styles.textDark}>Continue {'>'}</Text>
       </TouchableHighlight>
       <Image source={require('../assets/whiteBirds.png')} style={styles.footerImageBirds}/>
 

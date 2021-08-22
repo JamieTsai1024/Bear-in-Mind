@@ -10,6 +10,9 @@ import ReportSightingPage1 from "./pages/ReportSightingPage1.js";
 import ReportSightingPage2 from "./pages/ReportSightingPage2.js";
 import ReportSightingPage3 from "./pages/ReportSightingPage3.js";
 import ReportSightingPage4 from "./pages/ReportSightingPage4.js";
+import TrailPage from "./pages/TrailPage.js";
+import LoginPage from "./pages/LoginPage.js";
+import SignUpPage from "./pages/SignUpPage.js";
 
 const Stack = createNativeStackNavigator();
 
@@ -22,15 +25,17 @@ export default function App() {
             name="Landing"
             component={LandingPage}
           />
-        </Stack.Group>
-        <Stack.Group>
+          <Stack.Screen 
+            name="Login" 
+            component={LoginPage} 
+          />
+          <Stack.Screen 
+            name="Sign Up" 
+            component={SignUpPage} 
+          />
           <Stack.Screen 
             name="Main Menu" 
             component={MainMenuPage} 
-          />
-          <Stack.Screen 
-            name="My Locations" 
-            component={MyLocationsPage} 
           />
           <Stack.Screen 
             name="Report Sighting 1" 
@@ -47,6 +52,16 @@ export default function App() {
           <Stack.Screen 
             name="Report Sighting 4" 
             component={ReportSightingPage4} 
+          />
+        </Stack.Group>
+        <Stack.Group>
+          <Stack.Screen 
+            name="My Locations" 
+            component={MyLocationsPage} 
+          />
+          <Stack.Screen 
+            name="Trail Page" 
+            component={TrailPage} 
           />
         </Stack.Group>
       </Stack.Navigator>

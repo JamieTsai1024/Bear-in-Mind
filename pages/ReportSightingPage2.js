@@ -7,16 +7,12 @@ import {useFormik} from 'formik';
 var danger = "None";
 
 export default function ReportSightingPage2({navigation}) {
-  const formik = useFormik({
-    initialValues: {danger: ''},
-    onSubmit: values => {}
-  });
   return (
     <View style={styles.containerDark}>
       <Text style={styles.titleLight}>Report a Sighting</Text>
       <Text style={styles.subtitleLight}>How dangerous was the animal?</Text>
 
-      <View style={styles.horizontalFlex, styles.addMargin}>
+      <View style={[styles.horizontalFlex, styles.addMargin]}>
         <TouchableHighlight style={[styles.buttonMint, styles.buttonShort]} onPress={() => {
           danger = "Minor";
           navigation.navigate('Report Sighting 3');
@@ -30,10 +26,10 @@ export default function ReportSightingPage2({navigation}) {
           <Text style={styles.textDark}>Moderate</Text>
         </TouchableHighlight>
         <TouchableHighlight style={[styles.buttonMint, styles.buttonShort]} onPress={() => {
-          danger = "Considerable";
+          danger = "High";
           navigation.navigate('Report Sighting 3');
         }}>
-          <Text style={styles.textDark}>Considerable</Text>
+          <Text style={styles.textDark}>High</Text>
         </TouchableHighlight>
       </View>
       

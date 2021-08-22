@@ -25,12 +25,24 @@ export const styles = StyleSheet.create({
     fontSize: 36,
     marginBottom: 20,
   },
+  italic: {
+    fontStyle: "italic",
+  },
   subtitleLight: {
     color: "#F2FDF5",
     fontSize: 18,
     fontStyle: "italic",
     marginBottom: 30,
     textAlign: "center",
+    justifyContent: "center",
+  },
+  subtitleDark: {
+    color: "#3C362A",
+    fontSize: 18,
+    fontStyle: "italic",
+    marginBottom: 30,
+    textAlign: "center",
+    justifyContent: "center",
   },
   center: {
     alignItems: "center",
@@ -39,27 +51,43 @@ export const styles = StyleSheet.create({
     marginLeft: 10,
     marginRight: 10,
   },
+  input: {
+    width: 200,
+    height: 40,
+    backgroundColor: "#F2FDF5",
+    borderRadius: 10,
+    borderColor: "#3C362A",
+    padding: 10,
+  },
   addMargin: {
     marginLeft: 20,
     marginRight: 20,
     marginBottom: 40,
   },
+  moreMarginBottom: {
+    marginBottom: 30,
+  },
   extraMarginBottom: {
-    marginBottom: 100,
+    marginBottom: 110,
   },
   extraMarginHorizontal: {
     marginRight: 30,
     marginLeft: 30,
   },
+  extraMarginVertical: {
+    marginTop: 10,
+    marginBottom: 10,
+  },
+  extraLeftPadding: {
+    paddingLeft: 60,
+  },
   radioButton: {
-    // width: 100,
     color: "#F2FDF5",
     backgroundColor: "#F2FDF5",
     display: "none",
     opacity: 0,
     width: 0,
     height: 0,
-    // position: "absolute",
     left: -100,
     bottom: -100,
   },
@@ -68,11 +96,16 @@ export const styles = StyleSheet.create({
   },
   leftAlign: {
     textAlign: "left",
-    paddingLeft: 20,
+    paddingLeft: 10,
   },
   logo: {
     width: 160,
     height: 160,
+    justifyContent: "flex-start",
+  },
+  logoSmall: {
+    width: 80,
+    height: 80,
     justifyContent: "flex-start",
   },
   horizontalFlex: {
@@ -93,7 +126,7 @@ export const styles = StyleSheet.create({
   buttonPurple: {
     backgroundColor: "#663F46",
     width: 200,
-    height: 50,
+    height: 40,
     marginTop: 10,
     marginBottom: 15,
     borderRadius: 10,
@@ -103,7 +136,7 @@ export const styles = StyleSheet.create({
   buttonGrey: {
     backgroundColor:"#C2C2C2",
     width: 200,
-    height: 50,
+    height: 40,
     marginTop: 10,
     marginBottom: 15,
     borderRadius: 10,
@@ -143,8 +176,15 @@ export const styles = StyleSheet.create({
   footerImageTree: {
     position: "absolute",
     resizeMode: "contain",
-    bottom: -90,
-    right: -50,
+    bottom: -100,
+    // right: -50,
+    right: -160,
     marginBottom: 10,
-  }
+  },
+  iconImage: {
+    position: "absolute",
+    top: 7,
+    width: 40,
+    height: 40,
+  },
 });
