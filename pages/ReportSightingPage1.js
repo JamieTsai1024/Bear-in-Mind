@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Text, View, Button, Image, Input, TouchableHighlight, AsyncStorage} from 'react-native';
+import {Text, View, Image, Input, TouchableHighlight, AsyncStorage} from 'react-native';
 import {styles} from "../assets/style.js";
 import {Constants} from "expo";
 // import {RadioButton} from 'react-native-paper';
@@ -28,22 +28,19 @@ export default function ReportSightingPage1({navigation}) {
   const [warningText, setWarningText] = useState("");
 
   global.animal = "";
-  var showInfo = false;
 
   const onSelect = (item) => {
     if (selectedOption && selectedOption.key === item.key) {
-      // console.log("here 0", selectedOption);
+      // Set selectedOption to null when "unselecting" the option
       setSelectedOption(null);
     } else {
-      // console.log("here 2", selectedOption);
+      // In all other cases, selectedOption can be set to the item
       setSelectedOption(item);
     }
-    // console.log("selectedOption", selectedOption);
   };
 
   const moveOn = (item) => {
     if (selectedOption == null) {
-      showInfo = true;
       showTitle();
     } else {
       global.animal = selectedOption.key; 
@@ -82,24 +79,6 @@ export default function ReportSightingPage1({navigation}) {
     </View>
   );
 };
-
-// function bearPressed({navigation}) {
-//   animal = "Bear";
-//   alert("test bear: " + animal);
-//   navigation.navigate('Report Sighting 2');
-// }
-
-// function dmPressed({navigation}) {
-//   animal = "Deer / Moose";
-//   alert("test moose: " + animal);
-//   navigation.navigate('Report Sighting 2');
-// }
-
-// function wcPressed({navigation}) {
-//   animal = "Wolf / Coyote";
-//   alert("test wolf: " + animal);
-//   navigation.navigate('Report Sighting 2');
-// }
 
 // function next({navigation}) {
 //   AsyncStorage.getItem('curStorage', (response) => {

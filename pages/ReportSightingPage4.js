@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View, Button, Image, TouchableHighlight, TextInput} from 'react-native';
+import {Text, View, Image, TouchableHighlight, TextInput} from 'react-native';
 // import {RadioButton} from 'react-native-paper';
 import {styles} from "../assets/style.js";
 
@@ -13,8 +13,8 @@ export default function ReportSightingPage4({navigation}) {
         <Text style={styles.textDark}>Continue {'>'}</Text>
       </TouchableHighlight>
 
-      <TouchableHighlight style={styles.buttonMint} onPress={() => console.log("hey there " + global.animal)}>
-        <Text style={styles.textDark}>hey there {global.animal}</Text>
+      <TouchableHighlight style={styles.buttonMint} onPress={() => {console.log("animal: " + global.animal); console.log("danger: " + global.danger); console.log("coordinates: " + global.coordinates);}}>
+        <Text style={styles.textDark}></Text>
       </TouchableHighlight>
 
       <Image source={require('../assets/whiteBirds.png')} style={styles.footerImageBirds}/>
