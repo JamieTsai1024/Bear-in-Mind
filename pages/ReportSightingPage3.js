@@ -9,7 +9,6 @@ export default function ReportSightingPage3({navigation}) {
   const [coordinate, setCoordinate] = useState('65, 60');
   global.coordinate = "";
 
-  // const [selectedOption, setSelectedOption] = React.useState(null);
 
   // const onSelect = (item) => {
   //   if (selectedOption && selectedOption.key === item.key) {
@@ -37,7 +36,7 @@ export default function ReportSightingPage3({navigation}) {
       {/* <TouchableHighlight style={[styles.buttonMint, styles.moreMarginBottom]} onPress={() => coordinates()}>
         <Text style={styles.textDark}>Enter coordinates</Text>
       </TouchableHighlight> */}
-      <Hr lineColor="#F2FDF5" width={1} text="   Or   " textStyles={styles.textLight} hrStyles={{width: 200}}/>
+      <Hr lineColor="#F2FDF5" width={1} text="   Or   " textStyles={styles.textLight} hrStyles={{width: 200,}}/>
 
       <View style={[styles.extraMarginVertical, styles.moreMarginBottom]}>
         <Text style={[styles.textLight, styles.leftAlign, styles.extraMarginVertical]}>Enter Coordinates</Text>

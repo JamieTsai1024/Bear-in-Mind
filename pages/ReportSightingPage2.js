@@ -6,6 +6,21 @@ import {styles} from "../assets/style.js";
 
 // var danger = "None";
 
+const danger = [
+  {
+    key: "Minor",
+    text: "Minor",
+  },
+  {
+    key: "Moderate",
+    text: "Moderate",
+  },
+  {
+    key: "High",
+    text: "High",
+  },
+];
+
 export default function ReportSightingPage2({navigation}) {
   
   global.danger = "";
@@ -17,10 +32,11 @@ export default function ReportSightingPage2({navigation}) {
       <Text style={styles.subtitleLight}>How dangerous was the animal?</Text>
 
       <View style={[styles.horizontalFlex, styles.addMargin]}>
-        
+
         {/* Minor */}
         <TouchableHighlight style={[styles.buttonMint, styles.buttonShort]} onPress={() => {
           global.danger = "Minor";
+          alert("hey " + global.animal);
           navigation.navigate('Report Sighting 3');
         }}>
           <Text style={styles.textDark}>Minor</Text>
@@ -49,10 +65,10 @@ export default function ReportSightingPage2({navigation}) {
       </TouchableOpacity> */}
       
       <View style={styles.horizontalFlex}>
-        <TouchableHighlight style={[styles.buttonGrey, styles.buttonShort]} onPress={() => navigation.navigate('Report Sighting 1')}>
+        <TouchableHighlight style={[styles.buttonGrey, styles.buttonShort, styles.extraMarginHorizontal]} onPress={() => navigation.navigate('Report Sighting 1')}>
           <Text style={styles.textDark}>{'<'} PREV</Text>
         </TouchableHighlight>
-        <TouchableHighlight style={[styles.buttonMint, styles.buttonShort, styles.extraMarginBottom]} onPress={() => navigation.navigate('Report Sighting 3')}>
+        <TouchableHighlight style={[styles.buttonMint, styles.buttonShort, styles.extraMarginHorizontal, styles.extraMarginBottom]} onPress={() => navigation.navigate('Report Sighting 3')}>
           <Text style={styles.textDark}>NEXT {'>'}</Text>
         </TouchableHighlight>
       </View>

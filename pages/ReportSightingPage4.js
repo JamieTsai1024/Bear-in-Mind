@@ -13,9 +13,9 @@ export default function ReportSightingPage4({navigation}) {
         <Text style={styles.textDark}>Continue {'>'}</Text>
       </TouchableHighlight>
 
-      {/* <TouchableHighlight style={styles.buttonMint} onPress={() => 1===1}>
-        <Text style={styles.textDark}>Hey there {global.coordinate}</Text>
-      </TouchableHighlight> */}
+      <TouchableHighlight style={styles.buttonMint} onPress={() => console.log("hey there " + global.animal)}>
+        <Text style={styles.textDark}>hey there {global.animal}</Text>
+      </TouchableHighlight>
 
       <Image source={require('../assets/whiteBirds.png')} style={styles.footerImageBirds}/>
 
