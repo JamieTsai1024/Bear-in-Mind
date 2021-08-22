@@ -1,10 +1,10 @@
+// Import libraries
 import React from 'react';
 import 'react-native-gesture-handler';
-
-// import {StyleSheet, Text, View, Button, Image, TouchableHighlight} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
+// Import the page functions from their respective JS files
 import LandingPage from "./pages/LandingPage.js";
 import MainMenuPage from "./pages/MainMenuPage.js";
 import MyLocationsPage from "./pages/MyLocations.js";
@@ -16,13 +16,16 @@ import TrailPage from "./pages/TrailPage.js";
 import LoginPage from "./pages/LoginPage.js";
 import SignUpPage from "./pages/SignUpPage.js";
 
+// To navigate between different pages
 const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+        {/* There are no headers for these pages */}
         <Stack.Group screenOptions={{headerShown: false}}>
+          {/* Declare all the pages as Stack.Screens */}
           <Stack.Screen
             name="Landing"
             component={LandingPage}
@@ -56,6 +59,7 @@ export default function App() {
             component={ReportSightingPage4} 
           />
         </Stack.Group>
+        {/* There are headers for these pages */}
         <Stack.Group>
           <Stack.Screen 
             name="My Locations" 

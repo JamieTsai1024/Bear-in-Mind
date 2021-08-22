@@ -192,7 +192,6 @@ export const styles = StyleSheet.create({
     position: "absolute",
     resizeMode: "contain",
     bottom: -100,
-    // right: -50,
     right: -160,
     marginBottom: 10,
   },

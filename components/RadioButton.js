@@ -8,9 +8,9 @@ export default function RadioButtons({ options, selectedOption, onSelect }) {
       {options.map((item) => {
         return (
           <View key={item.key}>
-          {/* <TouchableOpacity style={[styles.buttonMint, styles.buttonShort]} onPress={() => {onSelect(item)}}> */}
           <TouchableOpacity style={styles.radio} onPress={() => {onSelect(item)}}>
             
+              {/* Text and styling on select */}
               <Text style={styles.radioText}> {item.text} </Text>
               {selectedOption && selectedOption.key === item.key && (<View style={styles.radioChecked}/>)}
 
