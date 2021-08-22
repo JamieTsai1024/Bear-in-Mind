@@ -1,36 +1,47 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Text, View, Button, Image, Input, TouchableHighlight, AsyncStorage} from 'react-native';
-import {RadioButton} from 'react-native-paper';
 import {styles} from "../assets/style.js";
-import {useFormik} from 'formik';
+// import {RadioButton} from 'react-native-paper';
+// import {useFormik} from 'formik';
 
-var animal = "None";
+// var animal = "None";
 
 export default function ReportSightingPage1({navigation}) {
+  
+  // const [animal, setAnimal] = useState('Bear');
+  global.animal = "";
+
   return (
     <View style={styles.containerDark}>
       <Text style={styles.titleLight}>Report a Sighting</Text>
       <Text style={styles.subtitleLight}>What animal did you see?</Text>
 
       <View style={[styles.horizontalFlex, styles.addMargin]}>
+
+        {/* Bear */}
         <TouchableHighlight style={[styles.buttonMint, styles.buttonShort]} onPress={() => {
-          animal = "Bear";
+          global.animal = "Bear";
           navigation.navigate('Report Sighting 2');
         }}>
           <Text style={styles.textDark}>Bear</Text>
         </TouchableHighlight>
+        
+        {/* Deer / Moose */}
         <TouchableHighlight style={[styles.buttonMint, styles.buttonShort]} onPress={() => {
-          animal = "Deer / Moose";
+          global.animal = "Deer / Moose";
           navigation.navigate('Report Sighting 2');
         }}>
           <Text style={styles.textDark}>Deer / Moose</Text>
         </TouchableHighlight>
+
+        {/* Wolf / Coyote */}
         <TouchableHighlight style={[styles.buttonMint, styles.buttonShort]} onPress={() => {
-          animal = "Wolf / Coyote";
+          global.animal = "Wolf / Coyote";
           navigation.navigate('Report Sighting 2');
         }}>
           <Text style={styles.textDark}>Wolf / Coyote</Text>
         </TouchableHighlight>
+
       </View>
       
       <View style={styles.horizontalFlex}>
@@ -41,7 +52,9 @@ export default function ReportSightingPage1({navigation}) {
           <Text style={styles.textDark}>NEXT {'>'}</Text>
         </TouchableHighlight>
       </View>
+
       <Image source={require('../assets/whiteBirds.png')} style={styles.footerImageBirds}/>
+
     </View>
   );
 };
