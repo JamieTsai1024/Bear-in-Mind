@@ -1,11 +1,7 @@
 import React, {useState} from 'react';
-import {Text, View, Image, Input, TouchableHighlight, AsyncStorage} from 'react-native';
+import {Text, View, Image, TouchableHighlight} from 'react-native';
 import {styles} from "../assets/style.js";
-import {Constants} from "expo";
-// import {RadioButton} from 'react-native-paper';
-// import {useFormik} from 'formik';
 import RadioButton from '../components/RadioButton';
-// var animal = "None";
 
 const animals = [
   {
@@ -44,7 +40,6 @@ export default function ReportSightingPage1({navigation}) {
       showTitle();
     } else {
       global.animal = selectedOption.key; 
-      // console.log("hi my name is paul" + global.animal); 
       navigation.navigate('Report Sighting 2');
     }
   };

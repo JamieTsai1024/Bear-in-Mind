@@ -1,14 +1,13 @@
 import React, {useState} from 'react';
 import {Text, View, Image, TouchableHighlight, TextInput} from 'react-native';
 import {styles} from "../assets/style.js";
-// import {useFormik} from 'formik';
 import Hr from "react-native-hr-component";
 
 export default function ReportSightingPage3({navigation}) {
   
   const [coordinates, setCoordinates] = useState('65, 60');
   global.coordinates = "";
-  
+
   return (
     <View style={styles.containerDark}>
       <Text style={styles.titleLight}>Report a Sighting</Text>
@@ -22,7 +21,7 @@ export default function ReportSightingPage3({navigation}) {
 
       <View style={[styles.extraMarginVertical, styles.moreMarginBottom]}>
         <Text style={[styles.textLight, styles.leftAlign, styles.extraMarginVertical]}>Enter Coordinates</Text>
-        <TextInput style={styles.input} onChangeText={coordinates => setCoordinate(coordinates)} defaultValue={coordinates} placeholder="Location" textContentType="location" keyboardType="numeric"/>
+        <TextInput style={styles.input} onChangeText={coordinates => setCoordinates(coordinates)} defaultValue={coordinates} placeholder="Location" textContentType="location" keyboardType="numeric"/>
       </View>
 
       <View style={styles.horizontalFlex}>

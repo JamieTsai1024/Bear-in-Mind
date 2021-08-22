@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, Image, View, Button, TouchableHighlight} from 'react-native';
+import {Text, Image, View, TouchableHighlight} from 'react-native';
 import {styles} from "../assets/style.js";
 
 export default function MainMenuPage({navigation}) {

@@ -1,11 +1,7 @@
 import React, {useState} from 'react';
 import {Text, View, Image, TouchableHighlight} from 'react-native';
-// import {RadioButton} from 'react-native-paper';
 import {styles} from "../assets/style.js";
-// import {useFormik} from 'formik';
 import RadioButton from '../components/RadioButton';
-
-// var danger = "None";
 
 const dangers = [
   {

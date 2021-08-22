@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View, Image, TouchableHighlight, TextInput} from 'react-native';
+import {Text, View, Image, TouchableHighlight} from 'react-native';
 // import {RadioButton} from 'react-native-paper';
 import {styles} from "../assets/style.js";
 

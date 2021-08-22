@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View, Button, Image, TouchableHighlight} from 'react-native';
+import {Text, View, Image, TouchableHighlight} from 'react-native';
 import {styles} from "../assets/style.js";
 
 export default function LandingPage({navigation}) {
