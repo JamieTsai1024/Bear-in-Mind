@@ -19,45 +19,23 @@ export default function ReportSightingPage1({navigation}) {
       <View style={[styles.horizontalFlex, styles.addMargin]}>
         <TouchableHighlight style={[styles.buttonMint, styles.buttonShort]} onPress={() => {
           animal = "Bear";
-          // alert("test bear: " + animal);
           navigation.navigate('Report Sighting 2');
         }}>
           <Text style={styles.textDark}>Bear</Text>
         </TouchableHighlight>
         <TouchableHighlight style={[styles.buttonMint, styles.buttonShort]} onPress={() => {
           animal = "Deer / Moose";
-          // alert("test moose: " + animal);
           navigation.navigate('Report Sighting 2');
         }}>
           <Text style={styles.textDark}>Deer / Moose</Text>
         </TouchableHighlight>
         <TouchableHighlight style={[styles.buttonMint, styles.buttonShort]} onPress={() => {
           animal = "Wolf / Coyote";
-          // alert("test wolf: " + animal);
           navigation.navigate('Report Sighting 2');
         }}>
           <Text style={styles.textDark}>Wolf / Coyote</Text>
         </TouchableHighlight>
       </View>
-
-      {/* <View style={styles.addMargin}>
-        <RadioButton.Group onValueChange={formik.handleChange('animal')} value={formik.values.animal}>
-          <View style={styles.horizontalFlex}>
-            <View style={styles.center}>
-              <Text style={styles.textLight}>Bear</Text>
-              <RadioButton value='Bear'></RadioButton>
-            </View>
-            <View style={styles.center}>
-              <Text style={styles.textLight}>Deer / Moose</Text>
-              <RadioButton value='DM'></RadioButton>
-            </View>
-            <View style={styles.center}>
-              <Text style={styles.textLight}>Wolf / Coyote</Text>
-              <RadioButton value='WC'></RadioButton>
-            </View>
-          </View>
-        </RadioButton.Group>
-      </View> */}
       
       <View style={styles.horizontalFlex}>
         <TouchableHighlight style={[styles.buttonGrey, styles.buttonShort, styles.extraMarginHorizontal]} onPress={() => navigation.navigate('Main Menu')}>
