@@ -2,7 +2,7 @@
 
 A web app created for the Safety & Security Track at Peddie Hacks 2021.
 
-Check out our submission [here](https://devpost.com/software/bear-in-mind)! ʕ•ᴥ• ʔ 
+Check out our submission [here](https://devpost.com/software/bear-in-mind)!&nbsp;&nbsp;\ʕ•ᴥ•\ʔ 
 
 ## 🐻 What is Bear in Mind? 
 
