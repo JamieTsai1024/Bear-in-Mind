@@ -72,6 +72,18 @@ export const styles = StyleSheet.create({
     marginRight: 20,
     marginBottom: 40,
   },
+  // hideElement: {
+  //   opacity: 0, 
+  //   position: "absolute",
+  //   left: -1000,
+  //   bottom: -1000,
+  // },
+  // unhideElement: {
+  //   opacity: 1, 
+  //   position: "relative",
+  //   left: 0,
+  //   bottom: 0,
+  // },
 
   // Input 
   input: {
